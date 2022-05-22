@@ -9,13 +9,13 @@ include "addingpage.php"
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Web Lyrics</title>
+    <title>Uploading Lyrics</title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 
 </head>
 <body>
 <div class="container">
-    <h1 class="page-header text-center"> Song Lyrics App</h1>
+    <h1 class="page-header text-center"> Upload Lyrics </h1>
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
         <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New Song</a>

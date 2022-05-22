@@ -91,6 +91,48 @@
             </p>
         </main>
 
+
+            <!-- Start blog Area -->
+            <section class="blog-area section-gap" id="blog">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="menu-content pb-60 col-lg-10">
+                            <div class="title text-center">
+                                <h1 class="mb-10">Look and See Lyrics</h1>
+                                <p>Music is the soul of language</p>
+                            </div>
+                        </div>
+                    </div>                      
+                    
+                        <div class="row">
+                    
+                        <?php
+                            $addlyrics = simplexml_load_file('files/addsong.xml');
+                            foreach ($addlyrics->Lyric as $rows){
+                        ?>
+
+                        <div class="col-lg-6 col-sm-6 single-blog">
+                            <a href="viewsong.php?Song=<?php echo $rows->Song; ?>"><h4> <?php echo $rows->Title; ?> </h4></a>
+                            <p>
+                                 <?php echo mb_strimwidth($rows->Lyrics, 0, 60, "read more..."); ?> 
+                            </p>
+                            <p class="post-date">
+                                <?php echo $rows->SongBy." - ".$rows->Date; ?>
+                            </p>
+                        </div>
+                        <?php
+                        }
+                        ?>
+                    
+                    </div>
+                </div>  
+            </section>
+            <!-- End blog Area -->
+
+
+
+
+
         <footer class="mt-auto text-white">
             <p>Created by Group 4</p>
         </footer>
