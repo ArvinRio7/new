@@ -1,5 +1,5 @@
 <!-- Edit -->
-<div class="modal fade" id="edit_" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="edit_<?php echo $rows->Song; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -8,7 +8,7 @@
             </div>
             <div class="modal-body">
 			<div class="container-fluid">
-			<form method="POST" action="">
+			<form method="POST" action="edit_Song.php">
 				<div class="row form-group">
 					<div class="col-sm-2">
 						<label class="control-label" style="position:relative; top:7px;">Song No.:</label>
@@ -27,10 +27,10 @@
 				</div>
 				<div class="row form-group">
 					<div class="col-sm-2">
-						<label class="control-label" style="position:relative; top:7px;">Author:</label>
+						<label class="control-label" style="position:relative; top:7px;">SongBy:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="Song_By" value="<?php echo $rows->Author; ?>">
+						<input type="text" class="form-control" name="Song_By" value="<?php echo $rows->SongBy; ?>">
 					</div>
 				</div>
 				<div class="row form-group">

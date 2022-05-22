@@ -8,7 +8,7 @@ if (isset($_REQUEST['upload'])) {
 
 	$Lyric->addChild('Song', $_REQUEST['Song_No']);
 	$Lyric->addChild('Title', $_REQUEST['Song_title']);
-	$Lyric->addChild('Author', $_REQUEST['Song_By']);
+	$Lyric->addChild('SongBy', $_REQUEST['Song_By']);
 	$Lyric->addChild('Date', $_REQUEST['Song_date']);
 	$Lyric->addChild('Lyrics', $_REQUEST['Song_Lyrics']);
 

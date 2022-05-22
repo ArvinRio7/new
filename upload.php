@@ -64,7 +64,7 @@ include "addingpage.php"
                             <td> <?php echo $rows->Date; ?> </td>
                             <td> <?php echo mb_strimwidth($rows->Lyrics, 0, 30, "..."); ?> </td>
                             <td>
-                                <a href="#edit_" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
+                                <a href="#edit_<?php echo $rows->Song; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span></a>
                                 <a href="#delete_<?php echo $rows->Song; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span></a>
                             </td>
                         <?php include "edit_delete_modal.php"; ?>
